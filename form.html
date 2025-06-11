@@ -1,0 +1,78 @@
+<!-- 
+<input type="text">
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="time">
+<input type="url">
+<input type="week">
+-->
+<html>
+<head>
+	<title>form page</title>
+</head>
+<body>
+		
+		<h1 align="center">Registration Form</h1>
+		<form method="post" enctype="multipart/form-data" >
+			Fname		:<input type="text" name="fname" required><br><br>
+			Lname		:<input type="text" name="fname"><br><br>
+			User name:<input type="text" name="uname" size="50"><br><br>
+			Email        :<input type="email" name="mail"><br><br>
+			password	:<input type="password" name="pass"><br><br>
+			Address:	:<textarea name="address" cols="50" rows="5"></textarea><br><br>
+			Date			:<input type="date" name="dob"><br><br>
+			Time 		:<input type="time" name="time"><br><br>
+			Color 		:<input type="color" name="color"><br><br>
+			Upload  file/image 		:<input type="file" name="file"><br><br>
+			Date/Time	:<input type="datetime-local" name="datetime-local"><br><br>
+			
+			Gender	<br>	
+			Male:		<input type="radio" name="Gender" value="male" checked>
+			Female:		<input type="radio" name="Gender" value="female"><br><br>
+			
+			Language<br>
+			Hindi		:<input type="checkbox" name="lan[]" value="hindi">
+			Gujarati		:<input type="checkbox" name="lan[]" value="guj">
+			English		:<input type="checkbox" name="lan[]" value="eng">
+			Other		:<input type="checkbox" name="lan[]" value="other"><br><br>
+			
+			month		:<input type="month" name="mon"><br><br>
+			Phone		:<input type="number" name="phone"><br><br>
+			Week		:<input type="week" name="week"><br><br>
+			
+			country		:
+			<select name="country">
+				<option value="">--------Select Country--------</option>
+				<option value="India">India</option>
+				<option value="UK">UK</option>
+				<option value="Canada">Canada</option>
+				<option value="Australia">Australia</option>
+			</select>
+			
+			Hidden 	:
+			<input type="hidden" name="religion" value="indian"><br><br>
+		
+			image		:<input type="image" name="image"><br><br>
+			
+			<input type="submit" name="submit" value="register">
+			<input type="button" name="submit" value="register">
+			<input type="reset" name="reset">
+		</form>
+</body>
+</html>
