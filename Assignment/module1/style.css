@@ -56,8 +56,18 @@
         .asleft li{
             margin: 25px;
         }
+       
        footer{
         height: 200px;
         width:auto;
         background-color:rgb(238, 177, 97);
        }
+        footer ul{
+                display: flex;
+                flex-direction: row;
+                /* justify-content: space-around; */
+        }
+        footer ul li{
+                list-style: none;
+                margin-right: 55px;
+        }
