@@ -1,0 +1,59 @@
+<html>
+<head><title>Contact us page</title>
+	
+	<style>
+		.cont{
+					height:auto;
+					width:auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+		}
+		.cont1{
+						border:2px solid black;
+					    border-radius:15px;
+						height:400px;
+						width:20%;
+						justify-content: center;
+						align-items: center;
+						background-color:pink;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="cont">
+	<div class="cont1">
+	<form method="Post"align="center"><br><br>
+	<h1>SignUp Form Example</h1><br>
+		
+			<input type="email" name="mail" placeholder="Email" size="30" required style="height:30px;"><br><br>
+			<input type="password" name="pswd" placeholder="Password" size="30" required style="height:30px;"><br><br>
+		
+			<input type="Submit" name="Signup" value="Login" style="margin:20px; height:30px; border-radius:5px; cursor:pointer;">
+		
+	</div>
+	</div>		
+	</form>
+</body>
+</html>
+<?php
+        if(isset($_POST['Signup']))
+        {
+            $pswd=$_POST['pswd'];
+            $encrypt=md5($pswd);
+            // echo $encrypt;
+            // echo "hello";    
+
+            $pwd="nisha";
+            $dupencrypt=md5($pwd);
+
+            if($encrypt==$dupencrypt)
+            {
+                    echo "<h2>login sucessful</h2><br>";
+            }
+            else{
+                    echo "<h2> Incorrect pasword</h2><br>";
+            }
+        }
+?>
