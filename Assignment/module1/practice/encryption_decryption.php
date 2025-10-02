@@ -47,7 +47,7 @@
 
             $pwd="nisha";
             $dupencrypt=md5($pwd);
-
+			echo $pswd;
             if($encrypt==$dupencrypt)
             {
                     echo "<h2>login sucessful</h2><br>";
